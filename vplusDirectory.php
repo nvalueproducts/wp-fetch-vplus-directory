@@ -17,8 +17,8 @@ define('VPLUS_DIRECTORY_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 // Enqueue necessary scripts and styles
 function vplus_directory_enqueue_scripts() {
-    wp_enqueue_style('vplus-directory-style', VPLUS_DIRECTORY_PLUGIN_URL . 'css/style.css');
-    wp_enqueue_script('vplus-directory-script', VPLUS_DIRECTORY_PLUGIN_URL . 'js/script.js', array('jquery'), '1.0', true);
+    wp_enqueue_style('vplus-directory-style', VPLUS_DIRECTORY_PLUGIN_URL . 'style.css');
+    wp_enqueue_script('vplus-directory-script', VPLUS_DIRECTORY_PLUGIN_URL . 'script.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'vplus_directory_enqueue_scripts');
 
